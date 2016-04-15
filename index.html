@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,10 +50,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">О программе</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Загрузить</a>
+                        <a class="page-scroll" href="#download">Скачать Lime torrent</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contacts">Контакты</a>
@@ -67,28 +64,15 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1><img src="img/lime_logo.png" alt="Lime torrent"></h1>
-					<h4>Простой и понятный торрент-клиент со встроенным плеером.</h4>
-                    <a class="btn btn-default page-scroll" href="#download">Скачайте Lime torrent для Windows</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>О программе</h1>
-					<p>Lime torrent — простой в обращении торрент-клиент с возможностью потокового воспроизведения мультимедиа.</br>
-					Смотрите фильмы и слушайте музыку с торрентов, не дожидаясь окончания нудной загрузки.</p></br>
-					<img src="img/lime_main.png" alt="Главное окно приложения">
-                </div>
-            </div>
+        <div class="intro-section-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<a href="/" class="intro-logo"></a>
+						<h1 class="intro-title">Простой торрент-клиент со встроенным плеером.</h1>
+					</div>
+				</div>
+			</div>
         </div>
     </section>
 
@@ -96,10 +80,27 @@
     <section id="download" class="download-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Загрузить Lime torrent</h1>
-					<a class="btn btn-default page-scroll" href="https://github.com/MadFrucht/Lime/releases/download/Lastest/Lime_Win64.7z">Lime torrent для Windows x64</a>
-					<a class="btn btn-default page-scroll" href="https://github.com/MadFrucht/Lime/releases/download/Lastest/Lime_Win32.7z">Lime torrent для Windows x86</a>
+                <div class="col-sm-6 col-sm-push-6">
+                    <div class="description">
+                        <h1 class="block-title">Скачать Lime torrent</h1>
+						<p>Lime torrent — простой в обращении торрент-клиент с возможностью потокового воспроизведения мультимедиа.</br>
+							Смотрите фильмы и слушайте музыку с торрентов, не дожидаясь окончания нудной загрузки.</p>
+                        <div class="hidden-xs row">
+                            <div class="col-md-6">
+                                <a href="https://github.com/MadFrucht/Lime/releases/download/Lastest/Lime_Win32.7z" class="button downloadx86-button"><span class="sr-only">Lime torrent для Windows x86</span></a>
+                                <p class="requirements">Windows 7, 8, 8.1, 10</p> 
+                            </div>
+							<div class="col-md-6">
+                                <a href="https://github.com/MadFrucht/Lime/releases/download/Lastest/Lime_Win64.7z" class="button downloadx64-button"><span class="sr-only">Lime torrent для Windows x64</span></a>
+                                <p class="requirements">Windows 7, 8, 8.1, 10</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <div class="screen">
+                        <img src="img/lime_main.png" class="screen-image">
+                    </div>
                 </div>
             </div>
         </div>
