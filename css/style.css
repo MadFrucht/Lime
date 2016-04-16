@@ -111,8 +111,9 @@ of those sections to manage the look and feel of the site. */
 {
 	background: url(../img/lime_logo.svg);
     background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
     height: 100px;
-    width: 549px;
     position: relative;
     display: block;
     margin: 0 auto 30px;
