@@ -135,15 +135,15 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.downloadx64-button
+.downloadsetup-button
 {
-    background-image: url(../img/download_x64.png);
+    background-image: url(../img/download_setup.png);
     background-repeat: no-repeat;
 }
 
-.downloadx86-button
+.downloadarchive-button
 {
-    background-image: url(../img/download_x86.png);
+    background-image: url(../img/download_archive.png);
     background-repeat: no-repeat;
 }
 
