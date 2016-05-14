@@ -16,4 +16,14 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+	adjustDownloadHeight();
+});
+
+function adjustDownloadHeight() {
+	var h = window.innerHeight - $(".footer").outerHeight() - $(".copyright").outerHeight() - $(".navbar").outerHeight();
+	$("#download").css("min-height", h);
+}
+
+$(window).resize(function(){
+	adjustDownloadHeight();
 });
