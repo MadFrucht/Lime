@@ -130,7 +130,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .download-section {
-    height: auto;
+    height: 75%;
     padding-top: 100px;
     background: #fff;
 }
