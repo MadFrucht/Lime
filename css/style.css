@@ -167,7 +167,8 @@ of those sections to manage the look and feel of the site. */
 
 .description p
 {
-    width: 80%;
+    width: auto;
+    text-align: justify;
 }
 
 .description br
