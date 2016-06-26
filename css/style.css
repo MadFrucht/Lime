@@ -183,6 +183,13 @@ of those sections to manage the look and feel of the site. */
     color: #888888;
 }
 
+.mirror
+{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #888888;
+}
+
 .contacts-section {
     height: 100%;
     padding-top: 150px;
