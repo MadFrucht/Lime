@@ -39,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/lime_header.png" alt="Lime torrent"></a>
+                <a href="#page-top" class="navbar-brand page-scroll lime-logo"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,6 +55,11 @@
                     <!-- <li>
                         <a class="page-scroll" href="#contacts">Контакты</a>
                     </li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    	<a class="navbar-brand donate-button" id="donate"></a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -105,19 +110,6 @@
                     </div>
                 </div>
             </div>
-			<div class="row">
-				<div class="col-sm-12">
-					<p align="justify">Разработчику Lime torrent нужна Ваша поддержка.</br>
-						Буду благодарен Вам за поддержку проекта, стредства пойдут на дальнейшее развитие проекта, покупку сертификата безопасности и аренду отдельного сервера.</br>
-						Вы можете поддержать проект, пожертвовав средства на любой из перечисленных WebMoney-кошельков:</br>
-						<ul>
-							<li>R237460918715</li>
-							<li>Z781396849038</li>
-						</ul>
-						Спасибо.
-					</p>
-				</div>
-			</div>
         </div>
     </section>
     
@@ -138,9 +130,11 @@
     </div>
     <div class="copyright">
         <div class="container text-center">
-            © 2016 MADMAN
+            © 2017 MADMAN
         </div>
     </div>
+
+    <div class="modal"></div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -162,15 +156,41 @@
 
     </script>
 
-<script type="text/javascript">
-window._urq = window._urq || [];
-_urq.push(['initSite', 'e21269a9-63ff-4807-9c9c-f3bbaa4ee43e']);
-(function() {
-var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
-ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
-})();
-</script>
+	<script type="text/javascript">
+		var redirect = function(url, data) {
+			$('body').addClass("loading");
+	        
+	        var form = '';
+	        $.each(data, function(key, value) {
+	            form += '<input type="hidden" name="'+key+'" value="'+value+'">';
+	        });
+	        $('<form action="'+url+'" method="POST">'+form+'</form>').submit();
+		};
+
+		jQuery(document).ready(function(){
+		    jQuery('#donate').click(function(){
+		    	redirect(
+		    		'https://www.paypal.com/cgi-bin/webscr', {
+		        	'cmd': '_s-xclick',
+		        	'hosted_button_id': 'TXBEF8R77TM9Y'
+		        });
+		    })
+		});
+	</script>  
+
+	<script type="text/javascript">
+		window._urq = window._urq || [];
+		_urq.push(['initSite', 'e21269a9-63ff-4807-9c9c-f3bbaa4ee43e']);
+		(function() {
+			var ur = document.createElement('script'); 
+			ur.type = 'text/javascript'; 
+			ur.async = true;
+			ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+			
+			var s = document.getElementsByTagName('script')[0]; 
+			s.parentNode.insertBefore(ur, s);
+		})();
+	</script>
 </body>
 
 </html>

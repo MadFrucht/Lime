@@ -87,7 +87,7 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section::before
 {
-	content: "";
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -109,14 +109,39 @@ of those sections to manage the look and feel of the site. */
 
 .intro-logo
 {
-	background: url(../img/lime_logo.svg);
+    background: url(../img/lime_header.svg);
     background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+    background-position: center;
+    background-size: contain;
     height: 100px;
     position: relative;
     display: block;
     margin: 0 auto 30px;
+}
+
+.donate-button
+{
+    background: url(../img/donate.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    width: 100px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.lime-logo
+{
+    background: url(../img/lime_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    position: relative;
+    display: block;
+    margin: 0 auto 0 0!important;
 }
 
 .intro-title
@@ -137,14 +162,18 @@ of those sections to manage the look and feel of the site. */
 
 .downloadsetup-button
 {
-    background-image: url(../img/download_setup.png);
+    background-image: url(../img/download_setup.svg);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .downloadarchive-button
 {
-    background-image: url(../img/download_archive.png);
+    background-image: url(../img/download_archive.svg);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .screen
@@ -208,4 +237,29 @@ of those sections to manage the look and feel of the site. */
     font-size: 0.8rem;
     padding: 25px 0;
     background: #FFFFFF;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/wait.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
 }
